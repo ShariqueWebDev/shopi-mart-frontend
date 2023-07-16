@@ -1,0 +1,46 @@
+@import '../../css-config/mixins.scss';
+
+.banner-section {
+    max-width: 1200px;
+    margin: 80px auto;
+
+    .banner-upper-content {
+        display: flex;
+        margin: 20px 10px;
+        @include mxSm{
+            flex-direction: column;
+        }
+
+        .info-section {
+            margin: 5px 10px;
+            max-width: calc(1200px - 50%);
+            margin-bottom: 20px;
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 15px;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+
+        .banner-img {
+            max-width: 800px;
+            // min-width: 450px;
+            margin: 0 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .summary{
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0 20px;
+    }
+}
